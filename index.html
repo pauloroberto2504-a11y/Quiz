@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Tecnologia</h1>
+        <p class="subtitle">Teste seus conhecimentos em HTML, CSS e JavaScript</p>
+
+        <form id="formulario">
+            <!-- Pergunta 1 -->
+            <div class="pergunta">
+                <h2>1. Qual é a função principal do HTML?</h2>
+                <div class="opcao">
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        <span>a) Estilizar páginas web</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        <span>b) Criar a estrutura e conteúdo de páginas web</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        <span>c) Adicionar interatividade às páginas</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        <span>d) Gerenciar banco de dados</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="pergunta">
+                <h2>2. Qual propriedade CSS é usada para alterar a cor do texto?</h2>
+                <div class="opcao">
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        <span>a) background-color</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        <span>b) text-color</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        <span>c) color</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        <span>d) font-color</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="pergunta">
+                <h2>3. O que faz a função getElementById() em JavaScript?</h2>
+                <div class="opcao">
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        <span>a) Seleciona um elemento pelo nome da classe</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        <span>b) Seleciona um elemento pelo atributo id</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        <span>c) Cria um novo elemento</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        <span>d) Remove um elemento do DOM</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="pergunta">
+                <h2>4. Qual é a tag HTML para criar um parágrafo?</h2>
+                <div class="opcao">
+                    <label>
+                        <input type="radio" name="q4" value="a">
+                        <span>a) &lt;para&gt;</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        <span>b) &lt;p&gt;</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        <span>c) &lt;text&gt;</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        <span>d) &lt;paragraph&gt;</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="pergunta">
+                <h2>5. O que é uma variável em JavaScript?</h2>
+                <div class="opcao">
+                    <label>
+                        <input type="radio" name="q5" value="a">
+                        <span>a) Uma função que não retorna valor</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b">
+                        <span>b) Um espaço de memória que armazena um valor que pode mudar</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c">
+                        <span>c) Um tipo de loop</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="d">
+                        <span>d) Uma tag HTML</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Botão Responder -->
+            <button type="button" id="submitBtn" class="submit-btn">Responder</button>
+        </form>
+
+        <!-- Resultado -->
+        <div id="resultado" class="result hidden">
+            <h2>Resultado Final</h2>
+            <p id="pontuacao"></p>
+            <p id="textoFeedback"></p>
+            <button type="button" class="reset-btn" onclick="resetQuiz()">Tentar Novamente</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
